@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>[PAGE TITLE]</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Etch a Sketch</title>
 </head>
 <body>
-    <script type="text/javascript" src="script.js"></script>
+<div class="grid-wrapper">
+    <div class="grid" id="grid"> </div>
+</div>
+
+<div class="controls" id="size-button">
+        <button id="reset" onclick="resetGrid()">Reset Grid</button>    
+        <button id="resize" onclick="resizeGrid()">Resize Grid</button>
+</div>
 </body>
 </html>
