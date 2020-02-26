@@ -14,13 +14,13 @@ function drawGrid(gridSize)  {
             newdiv.style.border = "1px solid #999999";
             newdiv.addEventListener("mouseover", hoverEffect);
             grid.appendChild(newdiv);
-                            }
+            }
     }
             // now set the grid dimensions in the wrapper
             boxSize = (600 / gridSize);
-            grid.style.gridTemplateColumns = ( "repeat(" + gridSize + "," + boxSize +"px)");
-            grid.style.gridTemplateRows = ( "repeat(" + gridSize + "," + boxSize +"px)");
-
+            console.log ( "repeat(" + gridSize + ",1fr)");
+            grid.style.gridTemplateColumns = ( "repeat(" + gridSize + ",1fr)");
+            grid.style.gridTemplateRows = ( "repeat(" + gridSize + ",1fr)");
 }
 
 function resizeGrid() {
@@ -29,14 +29,11 @@ function resizeGrid() {
 }
 
 function resetGrid() {
-    
     grid.querySelectorAll("*").forEach(n => n.remove());
     drawGrid(gridSize);
-    
 }
 
 function  hoverEffect (e){   
-
     let hovered = document.getElementById(this.id);
     hovered.style.backgroundColor= "#000000";
 }

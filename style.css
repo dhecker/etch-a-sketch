@@ -3,13 +3,11 @@ body {
 }
 
 
-.main-wrapper {
-    border:10px solid black;
-     background: white;
-     text-align: center;  
-}
 .grid  {
   display: grid;
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
 } 
 
 .controls {
