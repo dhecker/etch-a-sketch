@@ -6,13 +6,12 @@ body {
 .main-wrapper {
     border:10px solid black;
      background: white;
+     text-align: center;  
 }
 .grid  {
   display: grid;
-max-width = 600
 } 
 
 .controls {
-
   text-align: center;  
 }
